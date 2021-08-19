@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <navbar></navbar>
+  <div class="uk-container">
+    <SidePane pillcolor="grey"></SidePane>
+    <!-- <div class="uk-text-center" uk-grid> -->
+      <router-view style="margin-top:30px"></router-view>
+    <!-- </div> -->
+  </div>
+  <VFooter style="margin-top:20vh;float:bottom"></VFooter>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Cards from './components/Layouts/cards';
+import navbar from "./components/Layouts/navbar";
+import VFooter from "./components/Layouts/VFooter";
+import SidePane from "./components/Layouts/SidePane";
+
+
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    navbar,
+    VFooter,
+    SidePane,
+  },
+};
 </script>
 
 <style>
+@import "~uikit/dist/css/uikit.min.css";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: black;
 }
 </style>
