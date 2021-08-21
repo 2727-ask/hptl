@@ -8,7 +8,9 @@
 <script>
 import { Document, Paragraph, Packer, TextRun } from "docx";
 import { saveAs } from "file-saver";
-import * as fs from 'fs-web';
+// import * as fs from 'fs-web';
+import * as fs from 'file-system';
+
 
 
 export default {
@@ -44,6 +46,7 @@ export default {
       fs.mkdir('/Users/ashutoshkumbhar/Desktop/').then((doc)=>{
           console.log('Done',doc)
       })
+
     //   this.saveDocumentToFile(doc, `vuedoc.docx`);
     },
 
