@@ -16,12 +16,14 @@ import SidePane from "./components/Layouts/SidePane";
 
 
 
+
 export default {
   components: {
     navbar,
     VFooter,
     SidePane,
   },
+  
 };
 </script>
 

@@ -1,5 +1,6 @@
 <template>
-  <h1></h1>
+  <h1 style="color:white">  
+  </h1>
 
 </template>
 

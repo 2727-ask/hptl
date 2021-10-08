@@ -16,6 +16,7 @@
       <tr v-if="!isLoading">
         <th>Date</th>
         <th>Patient Name</th>
+        <th>Purpose</th>
         <th>Pay Cut</th>
       </tr>
     </thead>
@@ -23,6 +24,7 @@
       <tr v-for="pay in paylist" :key="pay">
         <td style="color: white">{{ pay.date }}</td>
         <td style="color: white">{{ pay.pname }}</td>
+        <td style="color:white">{{pay.purpose.slice(0,10)}}</td>
         <td style="color: white">{{ pay.cut }} /-</td>
       </tr>
     </tbody>

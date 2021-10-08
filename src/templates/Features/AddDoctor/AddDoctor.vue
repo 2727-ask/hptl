@@ -18,15 +18,6 @@
         <input class="uk-input" type="text" name="wtnumber" v-model="wtno" placeholder="WhatsApp Number" required />
       </div>
       <div class="uk-width-1-1@s">
-        <h4 for="price" style="color: white; text-align: left">Price</h4>
-        <input
-          class="uk-input"
-          name="price"
-          style="color: white"
-          type="number"
-        />
-      </div>
-      <div class="uk-width-1-1@s">
         <button
           class="uk-button uk-align-left"
           style="
